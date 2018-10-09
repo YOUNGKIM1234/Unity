@@ -9,3 +9,11 @@
 5. asset : Project window에 뜨는 파일들. 게임 내에서 사용됨. Scene view, Inspector, Hierarchy window에 드래그/드롭으로 사용 가능.
 6. Transform : object의 위치 이동. Scene view에서도 가능.
 7. object 선택 + 단축키 F : 화면 중앙에 해당 object가 보이도록 카메라 조정.
+8. Scene view -> Gizmos -> 위에서 두번째 Show Grid 체크/체크 해제 : 눈금선 보이기/안보이기
+9. Project -> Create -> Material -> Albedo : 색 정하기.
+10. C# script : FixedUpdate () : 보통 물리엔진 관련된걸 적는 곳.
+11. 입력받기 : Input api 참고
+12. 물리 적용 : Rigidbody api (vertor3)참고
+13. 정해진 Unity 함수 이름이 몇개 있는데, 물리 업뎃 : FixedUpdate (), 그냥 업뎃 : Update(), 시작하면 1번 실행되는 코드 : Start() 등이있음. 
+   자세한건 찾아보기
+14. script에서 사용한 public 변수 : Inspecter에도 나타남.
