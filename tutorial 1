@@ -1,0 +1,11 @@
+# Unity
+
+
+1. Rigidbody : object에 물리법칙 추가
+2. NavMeshAgent : object가 움직이도록 AI추가
+   - speed 값 조절 가능
+3. custom component : code로 직접 만드는 object
+4. Prefab : 미리 만들어 놓은 object를 저장, 재사용/응용 하기 위해 만든 것. asset의 한 종류.
+5. asset : Project window에 뜨는 파일들. 게임 내에서 사용됨. Scene view, Inspector, Hierarchy window에 드래그/드롭으로 사용 가능.
+6. Transform : object의 위치 이동. Scene view에서도 가능.
+7. object 선택 + 단축키 F : 화면 중앙에 해당 object가 보이도록 카메라 조정.
