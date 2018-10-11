@@ -17,3 +17,18 @@
 13. 정해진 Unity 함수 이름이 몇개 있는데, 물리 업뎃 : FixedUpdate (), 그냥 업뎃 : Update(), 시작하면 1번 실행되는 코드 : Start() 등이있음. 
    자세한건 찾아보기
 14. script에서 사용한 public 변수 : Inspecter에도 나타남.
+15. 메인카메라를 player의 자식으로 두면 난리남. script로 엮어줄 것.
+16. LateUpdate() : 업데이트 함수. 그냥 Update : 프레임당 움직임을 받아와서 적용. LateUpdate : 추적 카메라, 절차 애니메이션, 
+                  마지막 상태 수집은 이게 더 좋음. Update에서 모든 변화를 처리한 후 실행됨.
+17. tramsform.rotate(new Vector3(a, b, c) * Time.deltaTime) : 계속 회전.
+18. 오른쪽 Inspecter에 있는 Collision : 충돌 감지하는 거. 
+19. Collider.OnTriggerEnter(Collider) : 실제 물리적 충돌 없이도 충돌을 감지하는 것.
+20. gameObject.tag / CompareTag ("string") : string으로 게임 오브젝트를 찾을 수 있음. / 비교하는 함수
+      사용 방법 : prefeb -> object 이름 밑 tag -> "string" 으로 하나 추가. 대소문자 구분하니 정확하게! -> 다시 tag 선택
+21. SetActivate : 게임 오브젝트를 활성화/비활성화
+22. 물리엔진 Trigger : 설정한 어느 한 부분에 player가 위치하면, 정해진 기능 수행. ex) 어느 한 부분을 지나가면 열리는 문
+      설정 방법 : prefeb -> collider -> Is Trigger 체크
+23. Collider + RigidBody : 둘 다 가지고 있으면 무조건 동적이라고 인식. / Collider만 있으면 정적이라고 인식.
+   ** 정적으로 인식하면 매 프레임마다 변화를 다시 계산을 하기 때문에 자원 소모 ↑ : 동적으로 만들어줘야함.
+24. RigidBody -> Use Gravity : 중력 작용여부 결정
+25. 24는 여전히 게임 오브젝트가 물리 엔진의 영향을 받음. -> 바로 밑 Is Kinematic 체크 : 물리 엔진이 적용되지 않음.
